@@ -80,3 +80,6 @@ PongGame/
     └── .gitkeep
 ```
 
+---
+
+*Desenvolvido por Felipe Grolla*
