@@ -1,6 +1,16 @@
+<div align="center">
+
 # 🏓 Pong
 
-Jogo clássico de Pong para 2 jogadores na OLED 128x64, com raquetes controladas por potenciômetro e física de rebote com ângulo variável.
+**Jogo clássico de Pong para 2 jogadores na OLED 128x64, com raquetes controladas por potenciômetro e física de rebote com ângulo variável.**
+
+[![Arduino](https://img.shields.io/badge/Arduino-Uno-00979D?style=for-the-badge&logo=Arduino&logoColor=white)](https://www.arduino.cc/)
+[![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://choosealicense.com/licenses/mit/)
+
+</div>
+
+---
 
 ## Como funciona
 
@@ -11,7 +21,9 @@ Jogo clássico de Pong para 2 jogadores na OLED 128x64, com raquetes controladas
 4. **Parede** — a bola quica no teto e no chão do campo de jogo (faixa azul da OLED).
 5. **Ponto** — quando a bola passa por uma das raquetes, o adversário marca ponto, o buzzer toca um som de ponto, e uma nova bola é sacada na mesma direção (o jogador que tomou o ponto recebe o próximo saque).
 
-## Pinout
+---
+
+## ⚙️ Componentes Utilizados
 
 | Componente                      | Pino Arduino |
 |----------------------------------|--------------|
@@ -21,14 +33,29 @@ Jogo clássico de Pong para 2 jogadores na OLED 128x64, com raquetes controladas
 | OLED SDA                          | A4 (I2C)     |
 | OLED SCL                          | A5 (I2C)     |
 
+---
+
 ## Bibliotecas
 
 - Adafruit SSD1306
 - Adafruit GFX
 
+---
+
 ## Layout / cores
 
 Assume uma OLED SSD1306 "duas cores" (faixa amarela fixa em y=0–15, azul no resto — físico, não controlado por software). O placar (`P1:x` / `P2:x`) fica na faixa amarela; todo o campo de jogo (raquetes, bola, linha central pontilhada) começa em y=16, na faixa azul.
+
+---
+
+🖼️ Esquemático
+
+![Simulação](circuit_images/simulador.png)
+![Esquemático](circuit_images/esquematico.png)
+![Circuito Real](circuit_images/Imagem1.jpeg)
+![Circuito Real](circuit_images/Imagem2.jpeg)
+
+---
 
 ## Destaques técnicos
 
